@@ -1,0 +1,25 @@
+{
+  "name": "Claude Purple",
+  "background": "#0D0E17",
+  "foreground": "#F5F3FF",
+  "cursorColor": "#9B87E8",
+  "selectionBackground": "#6F5FC4",
+
+  "black": "#1A1B26",
+  "red": "#F76E9E",
+  "green": "#9ECE6A",
+  "yellow": "#E0AF68",
+  "blue": "#7AA2F7",
+  "purple": "#9B87E8",
+  "cyan": "#7DCFFF",
+  "white": "#C0CAF5",
+
+  "brightBlack": "#414868",
+  "brightRed": "#FF7A93",
+  "brightGreen": "#B9F27C",
+  "brightYellow": "#FF9E64",
+  "brightBlue": "#7DA6FF",
+  "brightPurple": "#BB9AF7",
+  "brightCyan": "#A4D8FF",
+  "brightWhite": "#F5F3FF"
+}
