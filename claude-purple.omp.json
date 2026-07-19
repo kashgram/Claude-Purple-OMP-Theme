@@ -70,19 +70,19 @@
           "type": "text",
           "style": "plain",
           "foreground": "p:fade1",
-          "template": "\u2589\u2589"
+          "template": "\u2588\u2588"
         },
         {
           "type": "text",
           "style": "plain",
           "foreground": "p:fade2",
-          "template": "\u2589\u2589"
+          "template": "\u2588\u2588"
         },
         {
           "type": "text",
           "style": "plain",
           "foreground": "p:fade3",
-          "template": "\u2589\u2589"
+          "template": "\u2588\u2588"
         }
       ]
     },
