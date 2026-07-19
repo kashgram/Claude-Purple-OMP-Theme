@@ -9,9 +9,9 @@
     "success_green": "#7ac53b",
     "purple": "#9580FC",
     "purple_dark": "#7E6CD7",
-    "fade1": "#7A6BC0",
-    "fade2": "#584C8A",
-    "fade3": "#372F55",
+    "fade1": "#7169D2",
+    "fade2": "#4D52A9",
+    "fade3": "#293B7F",
     "white": "#F5F3FF",
     "icon_bg": "#EFEDFF",
     "dim": "#5B5A78",
@@ -70,19 +70,19 @@
           "type": "text",
           "style": "plain",
           "foreground": "p:fade1",
-          "template": "\u2593\u2593"
+          "template": "\u2589\u2589"
         },
         {
           "type": "text",
           "style": "plain",
           "foreground": "p:fade2",
-          "template": "\u2592\u2592"
+          "template": "\u2589\u2589"
         },
         {
           "type": "text",
           "style": "plain",
           "foreground": "p:fade3",
-          "template": "\u2591\u2591"
+          "template": "\u2589\u2589"
         }
       ]
     },
