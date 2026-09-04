@@ -43,7 +43,7 @@ A dark, purple pill-style PowerShell prompt theme for [Oh My Posh](https://ohmyp
    ```powershell
    notepad $PROFILE
    ```
-   Add this bloack of code (create the file if prompted):
+   Add this block of code (create the file if prompted):
    ```powershell
    $ompConfig = "$env:LOCALAPPDATA\oh-my-posh\claude-purple.omp.json"
    $ompCache  = "$env:LOCALAPPDATA\oh-my-posh\omp-cache.ps1"
