@@ -10,7 +10,7 @@ A dark, purple pill-style PowerShell prompt theme for [Oh My Posh](https://ohmyp
 
 ## Preview
 
-![Home Path](image-1.png)
+![Home Path](demo.png)
 
 ![Folder Path](image.png)
 
