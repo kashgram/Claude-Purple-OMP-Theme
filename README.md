@@ -39,6 +39,7 @@ A dark, purple pill-style PowerShell prompt theme for [Oh My Posh](https://ohmyp
    ```
 
 3. **Point your PowerShell profile at it.**  
+
    Open your profile:
    ```powershell
    notepad $PROFILE
