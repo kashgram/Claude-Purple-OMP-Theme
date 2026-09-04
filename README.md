@@ -22,23 +22,37 @@ A dark, purple pill-style PowerShell prompt theme for [Oh My Posh](https://ohmyp
 
 ## Installation
 
-1. **Install Oh My Posh** (if you haven't already):
+1. Prerequisites
+- [Oh My Posh](https://ohmyposh.dev/docs/installation/windows) installed.
+- A [Nerd Font](https://www.nerdfonts.com/) installed and set as your terminal font (e.g., *MesloLGS NF*, *JetBrainsMono NF*).
+
+2. Download the Theme
+
+   Save `claude-purple.omp.json` to your local app data directory (avoid syncing folders like OneDrive/Dropbox to prevent shell launch latency):
+
    ```powershell
-   winget install JanDeDobbeleer.OhMyPosh -s winget
+   # Create folder if it doesn't exist
+   New-Item -ItemType Directory -Force -Path "$env:LOCALAPPDATA\oh-my-posh"
+
+   # Download the theme directly from GitHub
+   git clone https://github.com/kashgram/Claude-Purple-OMP-Theme.git "$HOME\oh-my-posh\claude-purple-theme""$env:LOCALAPPDATA\oh-my-posh\claude-purple.omp.json"
    ```
 
-2. **Download the theme** into a permanent location, e.g.:
-   ```powershell
-   git clone https://github.com/<your-username>/claude-purple-theme.git "$HOME\oh-my-posh\claude-purple-theme"
-   ```
-
-3. **Point your PowerShell profile at it.** Open your profile:
+3. **Point your PowerShell profile at it.**  
+   Open your profile:
    ```powershell
    notepad $PROFILE
    ```
-   Add this line (create the file if prompted):
+   Add this bloack of code (create the file if prompted):
    ```powershell
-   oh-my-posh init pwsh --config "$HOME\oh-my-posh\claude-purple-theme\claude-purple.omp.json" | Invoke-Expression
+   $ompConfig = "$env:LOCALAPPDATA\oh-my-posh\claude-purple.omp.json"
+   $ompCache  = "$env:LOCALAPPDATA\oh-my-posh\omp-cache.ps1"
+
+   if (!(Test-Path $ompCache) -or ((Get-Item $ompConfig).LastWriteTime -gt (Get-Item $ompCache).LastWriteTime)) {
+      oh-my-posh init pwsh --config $ompConfig > $ompCache
+   }
+
+   . $ompCache
    ```
    Reload:
    ```powershell
